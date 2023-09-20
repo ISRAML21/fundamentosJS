@@ -39,6 +39,6 @@ for (const letra of letras){
 
 console.log ('For of\n');
 for (const numero of numeros){
-    console.log(numero)
+    console.log(numero) 
 }
 
