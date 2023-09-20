@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(224, 224, 224);
+        }
+        .container{
+            display: flex;
+            background-color: rgb(250, 250, 250);
+            width: 300px;
+            padding: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 2px 2px ;
+            align-items: center;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+          }
+        h1 {
+            color: #2e2e2e;
+            font-weight: normal;
+            font-size: 40px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h2 {
+            color: #585757;
+            font-weight: normal;
+            font-size: 25px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+          }
+          label {
+            color: #585757;
+            font-weight: normal;
+            font-size: 25px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+          }
+          .my-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          .my-button:hover {
+            background-color: #45a049;
+          }
+          .my-button:active {
+            background-color: #3e8e41;
+          }
+
+    </style>
+
+</head>
+<body>
+    <h1>Tareas con JavaScript</h1>
+    <div class="container">
+        <div class="formulario">
+            <label for="">Descripcion</label><textarea name="" id="inputTarea" cols="30" rows="10"></textarea>
+            <button onclick="addTarea()" class="my-button">Agregar Tarea</button>
+        </div>
+        <div id="tareas">
+            <h2>Tareas</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>
